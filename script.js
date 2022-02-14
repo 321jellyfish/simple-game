@@ -6,7 +6,7 @@ let playerTwoStatus = '';
 for (let gameCounter = 1; gameCounter < 8; gameCounter++ ){
 
     console.log(`THIS IS QUESTION NUMBER ${gameCounter}`);
-    console.log("");
+    console.log("----------");
     
     let roundResult = prompt ("Did player one win: 1, or player two win: 2, or was it a draw: D?");
 
@@ -61,10 +61,7 @@ for (let gameCounter = 1; gameCounter < 8; gameCounter++ ){
         break;
     }
 
-    let questionsRemaining = 7 - gameCounter;
-    console.log("");
-    console.log(`There are ${questionsRemaining} questions to go`);  
-    console.log("");      
+    let questionsRemaining = 7 - gameCounter;   
     
     if (questionsRemaining == (playerOneScore - playerTwoScore)){
         console.log("PLAYER TWO IS AT RISK: MUST WIN ALL REMAINING QUESTIONS");        
