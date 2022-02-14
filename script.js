@@ -5,11 +5,11 @@ let playerTwoStatus = '';
 
 for (let gameCounter = 1; gameCounter < 8; gameCounter++ ){
 
+    
+    let roundResult = prompt ("Did player one win: 1, or player two win: 2, or was it a draw: D?");
     console.log(`THIS IS QUESTION NUMBER ${gameCounter}`);
     console.log("----------");
     
-    let roundResult = prompt ("Did player one win: 1, or player two win: 2, or was it a draw: D?");
-
 
     if (roundResult == '1'){
         playerOneScore++;
