@@ -36,6 +36,16 @@ for (let gameCounter = 1; gameCounter < 8; gameCounter++ ){
         break;
     }
 
+
+    let questionsRemaining = 7 - gameCounter;   
+    
+    if ((playerOneScore === playerTwoScore)&&(questionsRemaining === 0)){
+        console.log("DRAW - SUDDEN DEATH");
+        break;
+    }
+
+
+
     if (playerOneScore === 3){
         console.log("");
         console.log("Player Two is at risk (must win next point)");
@@ -61,7 +71,7 @@ for (let gameCounter = 1; gameCounter < 8; gameCounter++ ){
         break;
     }
 
-    let questionsRemaining = 7 - gameCounter;   
+   
     
     if (questionsRemaining == (playerOneScore - playerTwoScore)){
         console.log("PLAYER TWO IS AT RISK: MUST WIN ALL REMAINING QUESTIONS");        
